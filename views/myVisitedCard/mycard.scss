@@ -1,0 +1,386 @@
+@import '../../index.scss';
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding-bottom: 20px;
+}
+
+.personInfo {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-top: 0;
+    background: url(manager/resources/card_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.updateMyCard {
+    font-size: $fontSize;
+    color: $primaryColor;
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.card_title{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 128px;
+}
+.personImg {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: 4px solid #eee;
+    position: absolute;
+    bottom: 16px;
+    left: 10px;
+    z-index: 10;
+}
+
+.infos {
+    padding-left: 140px;
+    padding-top: 56px;
+    padding-right: 12px;
+    font-size: 14px;
+    color: $primaryColor;
+    padding-bottom: 2px;
+    font-weight: bold;
+    vertical-align: center;
+}
+.home_text{
+    width: 80px;
+    margin-bottom: 12px;
+    margin-right: 8px;
+}
+.name {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 2px;
+    p{
+        display: inline;
+    }
+    p:first-child {
+        font-size: 17px;
+        margin-right: 6px;
+        position: relative;
+    }
+    p:last-child{
+        position: relative;
+        font-size: 14px;
+    }
+}
+
+.phone, .network {
+    line-height: 1.68;
+    font-size: 14px;
+}
+
+.serveNum {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    p {
+        color: $orangeColor;
+        margin-left: 4px;
+    }
+}
+
+.email, .aptitudes {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.workplace {
+    background: url(manager/resources/location.png)  no-repeat left center;
+    background-size: 10px 13px;
+    padding-left: 15px; 
+    margin-top: 12px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.call {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 16px;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.callImg {
+    width: 27px;
+    height: 50px;
+    background: url(manager/resources/call.png) no-repeat center;
+    background-size: 27px 27px;
+}
+
+.cont {
+    flex: 1;
+    padding-left: 10px; 
+}
+
+.rightArrow {
+    width: 20px;
+    height: 50px;
+    background: url(manager/resources/arrow-right.png) no-repeat center;
+    background-size: 10px 17px;
+}
+
+.phonePanel {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    padding: 0 16px;
+    display: flex;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.phoneImg {
+    width: 27px;
+    height: 50px;
+    background: url(manager/resources/phone.png) no-repeat center;
+    background-size: 15px 30px;
+}
+
+.remark {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 14px;
+
+    b {
+        color: #666;
+    }
+}
+
+.qrcodeCont {
+    width: 100%;
+    background: #fff;
+    margin-top: 10px;
+    padding-bottom: 14px;
+    &:after{
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+.Qrcode {
+    width: 50%;
+    height: 140px;
+    text-align: center;
+    display: table;
+    float: left;
+    position: relative;
+    span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    img {
+        width: 128px;
+        height: 128px;
+        border-radius: 32px;
+    }
+    canvas{
+        border-radius: 4px;
+    }
+}
+
+.qrcodeTips {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 60px;
+    left: 0;
+    font-size: 14px;
+    font-family: '微软雅黑';
+
+}
+.infoImg {
+    width: 32px;
+    background: url(manager/resources/icon_4.png) no-repeat center;
+    background-size: contain;
+}
+
+.timeImg {
+    width: 32px;
+    background: url(manager/resources/my-time.png) no-repeat center;
+    background-size: contain;
+}
+.toolbars {
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    padding: 4px 0;
+}
+
+.barItem {
+    flex: 1;
+    height: 56px;
+    text-align: center;
+    border-right: 1px solid #eee;
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.barItem:last-child {
+    border-right: none;
+}
+.info_list{
+    margin-top: 10px;
+    padding-top: 6px;
+    margin-bottom: 10px;
+    background: #fff;
+    font-size: 12px;
+    .info_list_item{
+        padding: 0px 8px 0px 12px;
+        .title{
+            color: #666;
+        }
+        span{
+            position: relative;
+            top: -6px;
+            left: 4px;
+            line-height: 24px;
+        }
+    }
+}
+.icon_phone{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/icon_10.png); 
+}
+.icon_wechat{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/icon_11.png); 
+}
+.icon_zhizi{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/icon_12.png); 
+}
+.icon_annouce{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/icon_13.png); 
+}
+.flex_panel{
+    display: flex;
+    .flex_item{
+        padding-top: 6px;
+        padding-right: 4px;
+        word-break: break-all;
+        flex: 1;
+    }
+}
+.logoOut {
+    position: relative;
+    width: 80%;
+    height: 44px;
+    margin: auto;
+    background: $primaryColor;
+    border-radius: 4px;
+}
+
+.logoOutFont {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: $fontSize;
+    text-align: center;
+    font-weight: bolder;
+}
+.logoOutPanel{
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+.qrcodeImg{
+    text-align: center;
+    img{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+}
+.text_tips{
+    color: #999;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: -8px;
+    text-align: center;
+}
+.focusImg{
+    text-align: center;
+    margin: auto;
+    background-image: url('manager/resources/focus_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 184px;
+    height: 184px;
+    padding: 8px;
+    img{
+        width: 100%;
+        margin: auto;
+        border-radius: 8px;
+    }
+}
+.text_orange{
+    font-size: 12px;
+    line-height: 1.44;
+    margin-top: 10px;
+    text-align: center;
+    color: $orangeColor;
+}
+.post_logo{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+    margin-left: 2px;
+}

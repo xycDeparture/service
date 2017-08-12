@@ -1,0 +1,300 @@
+@import '../../index.scss';
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.personInfo {
+    width: 100%;
+    height: 155px;
+    position: relative;
+    margin-top: 0;
+    background: url(manager/resources/main-bg.png) no-repeat center;
+    background-size: cover;
+    font-family: '微软雅黑';
+}
+
+.personImg {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.infos {
+    padding-left: 140px;
+    padding-top: 48px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: $primaryColor;
+    padding-bottom: 2px;
+    position: relative;
+}
+.infos_panel{
+    margin-top: 5px;
+}
+.name {
+    font-size: 17px;
+    margin-right: 6px;
+    line-height: 1.18;
+}
+
+.mobile, .nums {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    b {
+        color: $orangeColor;
+    }
+}
+
+.personType {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    background: url(manager/resources/member.png) no-repeat center left 20px;
+    background-size: 16px 18px;
+    line-height: 30px;
+    padding-left: 45px;
+    font-size: 16px;
+    color: $orangeColor;
+    font-weight: bold;
+
+    b {
+        margin-right: 4px;
+    }
+}
+
+.company {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    padding-left: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(manager/resources/company.png) #fff no-repeat center left 10px;
+    background-size: 24px 24px;
+}
+
+.companyName {
+    min-height: 42px;
+    line-height: 42px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 16px;
+    color:#6e6e6e;
+    font-weight: bold;
+}
+.productName {
+    min-height: 42px;
+    background: #fff;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color:#6e6e6e;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+    &:after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+.position {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    padding-left: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(manager/resources/position.png) #fff no-repeat center left 15px;
+    background-size: 14px 25px;
+}
+.product {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    padding-left: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(manager/resources/product.png) #fff no-repeat center left 15px;
+    background-size: 20px 20px;
+}
+.product_item{
+    float: left;
+    width: 22%;
+    text-align: center;
+    margin-right: 3%;
+    margin-top: 8px;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    border-radius: 4px;
+    color: #fff;
+    background: $primaryColor;
+}
+.call {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 0 16px;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.callImg {
+    width: 27px;
+    height: 50px;
+    background: url(manager/resources/call.png) no-repeat center;
+    background-size: 27px 27px;
+}
+
+.cont {
+    flex: 1;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.rightArrow {
+    width: 20px;
+    height: 50px;
+    background: url(manager/resources/arrow-right.png) no-repeat center;
+    background-size: 10px 17px;
+}
+.icon_phone{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/call.png); 
+}
+.icon_member{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/member.png); 
+}
+.icon_diamond{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/diamond.png); 
+}
+.text_orange{
+    color: $orangeColor;
+}
+.text_sm{
+    zoom: 0.7;
+    margin-left: 16px;
+    margin-right: 10px;
+}
+.detail_panel{
+    padding: 10px;
+    background: #fff;
+}
+.remark_panel{
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    background: #fff;
+    label{
+        color: #999;
+    }
+    span{
+        color: #000;
+    }
+}
+textarea{
+    resize: none;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.more{
+    color: $primaryColor;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid $primaryColor;
+    border-radius: 4px;
+    padding: 5px 8px;
+    text-decoration: none;
+    z-index: 10;
+}
+.icon_heart{
+    top: 2px;
+    background-image: url(../../resources/heart.png); 
+}
+.icon_edit{
+    left: 4px;
+    background-image: url(../../resources/icon_16.png);  
+}
+.icon_sm{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    margin-right: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+.replyTips{
+    width:100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-end; 
+
+    .errTips{
+        color:#f44336;
+        flex: 1;
+    }
+
+    .replyNum{
+        width: 40px;
+        span{
+            color: #ff9a00;
+        }
+    }
+}
+.post_logo{
+    
+}

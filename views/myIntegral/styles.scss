@@ -1,0 +1,321 @@
+@import '../../index.scss';
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.personInfo {
+    width: 100%;
+    height: 181px;
+    position: relative;
+    margin-top: 0;
+    background: url(manager/resources/main-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.updateMyCard {
+    font-size: $fontSize;
+    color: $primaryColor;
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.personImg {
+    width: 119px;
+    height: 144px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 10;
+}
+
+.infos {
+    padding-left: 140px;
+    padding-top: 72px;
+    font-size: 14px;
+    color: $primaryColor;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.name {
+    height: 28px;
+    line-height: 28px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 4px;
+    p:first-child {
+        font-size: 18px;
+        margin-right: 6px;
+        position: relative;
+        top: 0px;
+    }
+}
+
+.phone, .network {
+    line-height: 1.68;
+    font-size: 14px;
+}
+
+.personName {
+    flex: 1;
+    line-height: 32px;
+    text-align: center;
+    font-size: $fontSize;
+    font-weight: bold;
+    border-right: 1px solid #fff;
+    font-family: '微软雅黑';
+}
+
+.personIntegral {
+    flex: 1;
+    line-height: 32px;
+    text-align: center;
+    font-size: $fontSize;
+    font-weight: bold;
+    font-family: '微软雅黑';
+
+}
+
+.personIntegral b {
+    color: $primaryColor;
+}
+
+.integralDetail {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+}
+
+.integralDetailFont {
+    flex: 1;
+    padding-left: 35px;
+    background:url(manager/resources/integral-detail.png) left center no-repeat;
+    background-size: 29px 29px;
+    line-height: 50px;
+    font-size: $fontSize;
+    font-weight: bold;
+    color: #333;
+}
+
+.rightArrow {
+    width: 10px;
+    background: url(manager/resources/arrow-right.png) no-repeat center;
+    background-size: 10px 17px;
+}
+
+.integralTask {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.integralTaskFont {
+    padding-left: 35px;
+    background: url(manager/resources/integral-task.png) left center no-repeat;
+    background-size: 29px 25px;
+    line-height: 50px;
+    font-size: $fontSize;
+    font-weight: bold;
+}
+
+.taskContainer {
+    padding: 0 10px;
+    background: #fff;
+}
+
+.taskItem {
+    height: 54px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    padding-top: 4px;
+}
+
+.taskItem:last-child {
+    border-bottom: none;
+}
+
+.itemDetail {
+    flex: 1;
+    text-align: left;
+    padding: 2px 0;
+}
+
+.itemCont {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.itemIntegral {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.taskStatus {
+    flex: 1;
+    text-align: right;
+    line-height: 50px;
+    font-size: $fontSize;
+    font-weight: bold;
+    color: $primaryColor;
+}
+.title_link{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    .title_link_content{
+        background: #fff;
+        margin-top: 10px;
+        span{
+            position: relative;
+            top: -6px;
+        }
+        a{
+            padding: 10px 12px;
+            display: block;
+            text-decoration: none;
+            color: #000;
+            position: relative;
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+    .icon_right{
+        position: absolute;
+        right: 8px;
+        top: 16px;
+    }
+}
+.icon_right{
+    background-image: url(../../resources/details.png); 
+}
+.icon_sorce_detail{
+    margin-right: 8px;
+    background-image: url(../../resources/icon_14.png); 
+}
+.icon_sorce_task{
+    margin-right: 8px;
+    background-image: url(../../resources/icon_15.png); 
+}
+.icon{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 3px;
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+.icon_lg{
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    position: relative;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+.points_list{
+    margin-top: 10px;
+}
+.points_list_content{
+    background: #fff;
+    list-style: none;
+    padding: 0px 10px;
+    li{
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 6px 0;
+        h3{
+            line-height: 1.6;
+            font-size: 14px;
+            margin-left: 4px;
+            padding-right: 60px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .text_state{
+            position: absolute;
+            right: 4px;
+            top: 20px;
+            color: $primaryColor;
+        }
+        .text_scorce{
+            position: absolute;
+            right: 4px;
+            top: 20px;
+            color:  #6d6d6d;
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+}
+.list_title{
+        position: relative;
+        font-size: 16px;
+        font-weight: bold;
+        background: #fff;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 12px;
+        border-bottom: 1px solid #e6e6e6;
+        span{
+            position: relative;
+            top: -8px;
+        }
+}
+.text_info{
+    color: #6d6d6d;
+}
+.text_primary{
+    color: $primaryColor;
+}
+.text_orange{
+    color: $orangeColor;
+}
+.text_title{
+    font-weight: bold;
+}
+.nodata{
+    text-align: center;
+    transition: all 3s;
+    img{
+        width: 25%;
+        margin: auto;
+    }
+}
+.icon_phone{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    position: relative;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(manager/resources/call.png); 
+}

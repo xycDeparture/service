@@ -1,0 +1,272 @@
+@import '../../index.scss';
+
+.container{
+    width:100%;
+    min-height: 100%;
+    background: #f5f5f5;
+    padding-bottom: 32px;
+}
+.title{
+    width:100%;
+    height: 175px;
+    background: url(manager/resources/integral-bg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    text-align: center;
+    img{
+        width: 88px;
+        height: 88px;
+        border:2px solid #e5e5e5;
+        border-radius:50%;
+        margin-top: 32px;
+    }
+
+}
+.phone,.name{
+    width: 50%;
+    float: left;
+    padding-top: 16px;
+    text-align: center;
+}
+.phone{
+    color: $primaryColor;
+}
+.infos{
+    // height: 220px;
+    margin-top:15px;
+    background: #fff;
+    padding:10px;
+
+    .infoDetail{
+        // min-height: 160px;
+        border-bottom:1px solid #e9e9e9;
+        display: flex;
+        flex-direction: column;
+        padding:5px;
+        word-break: break-all;
+        .infoItem{
+            display: flex;
+            font-size: 14px;
+            margin-bottom: 8px;
+            .itemName{
+                color: #a0a0a0;
+                width: 75px;
+                text-align: center;
+            }
+            .itemPostscript{
+                flex: 1;
+            }
+        }
+    }
+}
+
+.infoStatus{
+    padding-top: 12px;
+    padding-left: 12px;
+    display: flex;
+    font-size: 14px;
+    padding-bottom: 12px;
+    .statusName{
+        width:70px;
+        color: #a0a0a0;
+    }
+
+    .statusInfo{
+        flex: 1;
+        color: #ff9b00;
+    }
+    .statusSevice{
+        flex: 1;
+        color: #ff9b00;
+        position: relative;
+        top: -4px;
+    }
+}
+.myinfos{
+    margin-top: 10px;
+    background: #fff;
+    padding-bottom: 10px;
+}
+.infoBottom{
+    padding-left: 20px;
+    padding-top: 8px;
+    display: flex;
+    font-size: 14px;
+    background: #fff;
+    .statusName{
+        width:70px;
+        color: #a0a0a0;
+    }
+    
+    .infoSevice{
+        word-break: break-all;
+        flex: 1;
+        position: relative;
+        top: -1px;
+    }
+    
+    .infoImg{
+        position: relative;
+        top: -3px;
+    }
+}
+.proPanel{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 14px;
+    margin-bottom: -10px;
+    .proText{
+        color: #a0a0a0;
+        display: inline-block;
+    }
+    .infoStar{
+        flex: 1;
+        position: relative;
+        top: 2px;
+    }
+    .propImg{
+        width: 60px;
+        img{
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            border-radius: 4px;
+
+        }
+    }
+}
+.infoBtn{
+    margin-top:12px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    .cancelBtn{
+        height: 40px;
+        line-height: 40px;
+        background: #2196f3;
+        padding:0 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+        color:#fff;
+    }
+    .sureBtn{
+        height: 40px;
+        line-height: 40px;
+        background: #2196f3;
+        padding:0 10px;
+        border-radius: 5px;
+        color:#fff;
+    }
+
+    .contactBtn{
+        height: 40px;
+        line-height: 40px;
+        margin-left: 10px;
+        background:#ff8800;
+        padding:0 10px;
+        border-radius: 5px;
+        color:#fff;
+    }
+
+    .commentBtn{
+        height: 40px;
+        line-height: 40px;
+        background: #e3e3e3;
+        text-align: center;
+        padding:0 10px;
+        border-radius: 5px;
+    }
+
+    .replyBtn{
+        width: 90%;
+        height: 40px;
+        line-height: 40px;
+        background: #2196f3;
+        color:#fff;
+        text-align: center;
+        padding:0 10px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+    }
+}
+
+.replyCont{
+    border-top:1px solid #e9e9e9;
+}
+
+.replyImgs{
+    height: 40px;
+    display: flex;
+
+    .stars{
+        width: 90px;
+        padding-top: 3px;
+    }
+
+    .flower{
+        width:50px;
+        height: 40px;
+        background: url(manager/resources/flower.png) no-repeat center;
+        background-size: contain;
+    }
+
+    .propImg{
+        width: 50px;
+        height: 30px;
+    }
+}
+
+.replyInfos{
+    font-size: 14px;
+}
+
+.manangerReply{
+    font-size: 14px;
+    color:#ff9b00;
+    margin-top: 10px;
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+.replyTips{
+    width:100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-end; 
+
+    .errTips{
+        color:#f44336;
+        flex: 1;
+    }
+
+    .replyNum{
+        width: 40px;
+        span{
+            color: #ff9a00;
+        }
+    }
+}
+.reply_list{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    .reply_list_item{
+        margin-top: 4px;
+        word-break: break-all;
+        line-height: 1.24;
+    }
+}
+.manager_text{
+    color: $orangeColor;
+}
+.customer_text{
+    color: #999;
+}
+.text_sure{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
